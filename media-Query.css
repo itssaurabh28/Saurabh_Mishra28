@@ -1,0 +1,81 @@
+/* Media query for screens 768px and smaller */
+@media (max-width: 768px) {
+
+    /* Adjust sidebar */
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        padding: 10px;
+
+
+        margin-top: 50px;
+    }
+
+    /* Adjust header */
+    header {
+        /* flex-direction: column; */
+        padding: 10px;
+        height: auto;
+    }
+
+    /* Stack elements in the .end section vertically */
+    .end {
+        /* flex-direction: column; */
+        gap: 10px;
+    }
+
+    /* Adjust the search bar width to fit smaller screens */
+    .searchbar input {
+        width: 100%;
+    }
+
+    /* Make the container layout vertical */
+    .container {
+        flex-direction: column;
+        margin-top: 70px; 
+    }
+
+    /* Grid container adjustments */
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0; /* Remove sidebar margin */
+        padding: 10px;
+    }
+
+    .grid-container > div {
+        width: 100%;
+    }
+
+    /* Button adjustments for better alignment on small screens */
+    .grid-container>div>button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    /* Adjust head2 layout */
+    .head2 {
+        /* flex-direction: column; */
+        padding: 10px;
+        top: auto;
+
+
+
+        /* margin-top: 135px; */
+    }
+
+/* for mobile view */
+.sidebar.hidden {
+    display: none;
+}
+
+/* Full-width content area for mobile view */
+.grid-container.full-width {
+    margin-left: 0;
+    width: 100%;
+}
+
+
+
+}
